@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>FoodExpress - Order</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -30,7 +31,7 @@ Address:<br>
 
 <h2>Order Details</h2>
 
-Select Dish:
+<label>Select Dish:</label><br>
 <select>
     <option>Paneer Tikka</option>
     <option>Chicken Biryani</option>
@@ -39,20 +40,28 @@ Select Dish:
 </select>
 <br><br>
 
-Quantity:
-<input type="number" min="1" max="10"><br><br>
+<label>Quantity:</label><br>
+<input type="number" min="1" max="10">
+<br><br>
 
-Extras:<br>
-<input type="checkbox"> Raita <br>
-<input type="checkbox"> Dessert <br>
-<input type="checkbox"> Soft Drink <br><br>
+<label>Extras:</label>
+<div class="options">
+    <label><input type="checkbox"> Raita</label>
+    <label><input type="checkbox"> Dessert</label>
+    <label><input type="checkbox"> Soft Drink</label>
+</div>
+<br>
 
-Payment Method:<br>
-<input type="radio" name="pay"> Cash on Delivery <br>
-<input type="radio" name="pay"> UPI/Card <br><br>
+<label>Payment Method:</label>
+<div class="options">
+    <label><input type="radio" name="pay"> Cash on Delivery</label>
+    <label><input type="radio" name="pay"> UPI / Card</label>
+</div>
+<br>
 
 <input type="submit" value="Place Order">
 <input type="reset">
+
 
 </form>
 
